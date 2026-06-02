@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:superheromood/screens/createmoods_screen.dart';
 
 class MainScreen extends StatefulWidget {
   static const String id = 'main_screen';
@@ -67,7 +68,7 @@ class _MainScreenState extends State<MainScreen> {
                           tooltip: 'Create Moods',
                           icon: const Icon(Icons.person_add),
                           onPressed: () {
-                            // navigasi ke createmoods_screen (Bagian 2)
+                            Navigator.pushNamed(context, CreateMoodsScreen.id);
                           },
                         ),
                         IconButton(
